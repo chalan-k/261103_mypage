@@ -11,6 +11,12 @@ Vanilla JavaScript를 사용하는 Vite 프로젝트입니다. GitHub에 업로�
 4. 외부 JavaScript 라이브러리는 `npm install`로 설치하고 import하여 사용합니다. CDN 방식은 사용하지 않습니다.
 5. 기존 파일과 설정이 있다면 먼저 확인하고 필요한 부분만 수정합니다.
 
+## 사이트 구성
+
+- 이름, 문구, 프로젝트, 연락처 등 내용은 `src/content.js`에서만 관리합니다.
+- 제공되지 않은 경력, 연구 실적, 이메일, 사이트 주소는 만들지 않고 빈 값으로 두어 입력 표시가 나타나게 합니다.
+- 방명록은 Netlify Forms를 사용합니다. Netlify가 빌드된 HTML에서 찾을 수 있도록 `<form>`은 `index.html`에 직접 둡니다.
+
 ## 빌드 및 배포
 
 - 빌드: `npm run build` (출력 폴더: `dist`)
